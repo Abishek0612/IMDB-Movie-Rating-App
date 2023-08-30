@@ -14,10 +14,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Registeration />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>
   );
 }
+
+const NotFound = () => <h1>Page Not available</h1>;
 
 export default App;
