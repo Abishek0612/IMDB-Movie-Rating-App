@@ -31,7 +31,7 @@ const Cards = ({ movie }) => {
         </div>
     ):(
     //    if isLoading is false, show card 
-        <Link to={`/movie/${movie.id}`} style={{textDecoration:"none",color:"white"}}>
+    <Link to={`/movie/${movie.id}`} style={{textDecoration:"none",color:"white"}}>
             {/* create carc Conatiner  */}
             <Card className="cards_img">
               <CardMedia
@@ -42,7 +42,7 @@ const Cards = ({ movie }) => {
                 />
                 {/* create a container for content information  */}
                 <div className="cards_overlay">
-                    <CardContent>
+                    <CardContent style={{textDecoration:"none",color:"white"}}>
                         {/* //Display of movie title  */}
                         <Typography variant="h6" component="div">
                             {movie?movie.original_title:""}
