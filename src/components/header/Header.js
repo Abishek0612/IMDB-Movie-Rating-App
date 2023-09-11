@@ -47,7 +47,19 @@ const Header = () => {
               >
                 <Typography variant="h6">Upcoming</Typography>
               </Link>
-            </div>
+
+            <Link
+              to="/video"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                marginLeft: "20px",
+              }}
+              >
+              <Typography variant="h5">VideoPlay</Typography>
+            </Link>
+              </div>
+
           </Grid>
           <Grid item xs={12} sm={4} md={4} lg={4}>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
@@ -71,7 +83,7 @@ const Header = () => {
               >
                 <Typography variant="h6">Login</Typography>
               </Link>
-              <IconButton style={{outlineColor:'white', marginLeft: "20px"}}>
+              <IconButton style={{ outlineColor: "white", marginLeft: "20px" }}>
                 <Avatar
                   alt="Remy Sharp"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwcHJvZmVzaWlvbmFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=1000&q=60"

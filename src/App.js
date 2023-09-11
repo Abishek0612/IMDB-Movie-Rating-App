@@ -9,6 +9,7 @@ import UpcomingMovieList from "./components/movieList/UpcominMovieList";
 import TopRatedMovieList from "./components/movieList/TopRatedMovieList";
 import Protect from "./components/protect/Protect";
 import MovieDetails from "./pages/movie/MovieDetails";
+import Videoplay from "./pages/video/Videoplay";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
             element={<Protect Component={UpcomingMovieList} />}
           />
 
+          <Route path="/video" element={<Videoplay/>} />
+
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>
@@ -46,3 +49,10 @@ function App() {
 const NotFound = () => <h1>Page Not available</h1>;
 
 export default App;
+
+
+
+// Api key :         AIzaSyAkVV43DZdvCg6y0Ov0iO3qmf-DnpnP3og
+
+
+// https://www.googleapis.com/youtube/v3/search?key=AIzaSyAkVV43DZdvCg6y0Ov0iO3qmf-DnpnP3og&part=snippet,id&order=date&maxResults=10

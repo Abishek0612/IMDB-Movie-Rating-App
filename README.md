@@ -104,3 +104,10 @@
 # 2) Top Rated
 # 3) Upcoming movies
 # 4) Register
+
+
+<!-- To play youtube videos -->
+
+# installation : npm i react-youtube
+
+# Website URL : https://www.npmjs.com/package/react-youtube
