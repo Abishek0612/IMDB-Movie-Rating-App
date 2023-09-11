@@ -5,11 +5,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import imdb_logo from "../../assets/imdb_logo.png";
-import { Avatar, IconButton } from "@mui/material";
 
 const Header = () => {
   return (
-    <AppBar position="static" style={{ background: "#202020" }}>
+    <AppBar position="static" style={{ background: "#202020"  , maxWidth:'100%'}}>
       <Toolbar>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item xs={12} sm={8} md={8} lg={8}>
@@ -35,7 +34,7 @@ const Header = () => {
                   marginLeft: "20px",
                 }}
               >
-                <Typography variant="h6">Top rated</Typography>
+                <Typography variant="h6">TopRated</Typography>
               </Link>
               <Link
                 to="/movies/upcoming"
@@ -56,7 +55,7 @@ const Header = () => {
                 marginLeft: "20px",
               }}
               >
-              <Typography variant="h5">VideoPlay</Typography>
+              <Typography variant="h5">Videos</Typography>
             </Link>
               </div>
 
@@ -83,12 +82,7 @@ const Header = () => {
               >
                 <Typography variant="h6">Login</Typography>
               </Link>
-              <IconButton style={{ outlineColor: "white", marginLeft: "20px" }}>
-                <Avatar
-                  alt="Remy Sharp"
-                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwcHJvZmVzaWlvbmFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D%3D&auto=format&fit=crop&w=1000&q=60"
-                />
-              </IconButton>
+             
             </div>
           </Grid>
         </Grid>
